@@ -1,0 +1,92 @@
+main {	
+	display: table;
+	caption-side: top;
+}
+	header {	
+		display: table-caption;
+	}
+
+	section {	
+		display: table-row;
+		background-color: maroon;
+		width: 80%;
+	}
+
+	aside {	
+		display: table-cell;
+		background-color: aqua;
+		width: 20%;
+	}
+	
+	h1 a {
+		font-size: .8em;
+	}
+	span{
+		font-size: 1rem;
+		position: relative;
+	}
+
+		span::after {
+			content: ">";
+		}
+
+		span::before {
+			content: "+ ";
+			position: absolute;
+			top:-10px;
+			right:-20px;
+		}
+
+	.square{	
+		width: 1em;	
+		height: 1em;
+		background-color: peru;
+		font-size: 50px;
+	}
+
+		.square::after {	
+			content: "";
+			width: .5em;
+			height: .5em;
+			background-color: red;
+			position: absolute;
+			top: .25em;
+			left: .25em;
+		}
+
+.container{	
+	width: 80%;
+}
+/*ul {	
+	list-style-type: none;
+	margin: o;
+	padding: o;
+	background-color: peru;
+	height: 100vp;
+}
+
+	li{	
+		background-color: olive;
+		height: 20vh;
+		border-bottom: maroon 1px solid;
+	}*/
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	display: inline-block;
+	text-align: center;
+}
+
+li:first-child {
+	background-color: red;
+	width: 100%;
+}
+
+li:last-child {
+	background-color: purple;
+	width: 100%;
+}

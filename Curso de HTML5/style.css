@@ -1,0 +1,73 @@
+/*selector universal*/
+/*
+*{
+	color:red;
+}*/
+
+/*selector de elemento*/
+h1, .h1 {
+	font-family: Arial, helvetica, sans-serif;
+	color: maroon;
+	font-size: 24px;
+}
+h2, .h2 {
+	font-family: Arial, helvetica, sans-serif;
+	color: green;
+	font-size: 16px;
+	font-size: 1rem; /*//fallback*/
+}
+
+/*DRY: Don't repeat yourself*/
+/*selector de clase*/
+/*.article-header {
+	font-family: Arial, helvetica, sans-serif;
+	color: green;
+}*/
+
+/*selector de id*/
+#topbar {
+	background-color: pink; 
+}
+
+.background-pink {
+	background-color: pink;
+}
+
+.article {
+
+}
+	.article__header {
+		font-family: Arial, helvetica, sans-serif;
+	color: green;
+	}
+	.article__footer {
+		font-family: Arial, helvetica, sans-serif;
+	color: green;
+	}
+
+li[data-RobotOwner="Koji Kabuto"] {
+	background-color: olive;
+	color: white;
+}
+li[data-RobotOwner="Sayaka Yumi"] {
+	background-color: brown;
+	color: white;
+}
+
+input[type="email"]:valid{ 
+	background-color: peru;
+}
+
+input[type="email"]:focus:invalid{ 
+	background-color: red;
+}
+
+.toggle:checked ~ .checked {
+	background-color: olive;
+} 
+
+.checked {
+	width:100px;
+	height: 100px;
+	background-color: peru;
+}
